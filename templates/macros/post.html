@@ -6,8 +6,7 @@ show_only_description %}
 <div>
     <!-- &#xFE0E; -- force text style - some devices render this as emoji -->
     <a class="read-more button" href="{{ page.permalink | safe }}">
-        <span class="button__text">Read more</span>&nbsp;
-        <span class="button__icon">&#8617;&#xFE0E;</span>
+        <span class="button__text">Read more >></span>
     </a>
 </div>
 {% else %} {#- full content -#}
@@ -29,15 +28,13 @@ config.extra.enable_post_view_navigation %} {%- if page.lower or page.higher %}
         {%- if page.higher %}
         <span class="button previous">
             <a href="{{ page.higher.permalink | safe }}">
-                <span class="button__icon">←</span>&nbsp;
-                <span class="button__text">{{ page.higher.title }}</span>
+                <span class="button__text"><< {{ page.higher.title }}</span>
             </a>
         </span>
         {% endif %} {% if page.lower %}
         <span class="button next">
             <a href="{{ page.lower.permalink | safe }}">
-                <span class="button__text">{{ page.lower.title }}</span>&nbsp;
-                <span class="button__icon">→</span>
+                <span class="button__text">{{ page.lower.title }} >></span>
             </a>
         </span>
         {% endif -%}
