@@ -16,7 +16,7 @@ Code block (using "boron" theme):
 class HelloPrinter:
     def __init__(self, thing):
         self.thing = thing
-        
+
     def __call__(self):
         print(f"Hello, {self.thing}!")
 

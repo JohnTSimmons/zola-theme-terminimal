@@ -86,7 +86,7 @@
                 {%- if paginator.previous %}
                     <span class="button previous">
                         <a href="{{ paginator.previous | safe }}">
-                            <span class="button__icon">←</span>&nbsp;
+                            <span class="button__icon"><< </span>&nbsp;
                             <span class="button__text">Newer posts</span>
                         </a>
                     </span>
@@ -95,7 +95,7 @@
                     <span class="button next">
                         <a href="{{ paginator.next | safe }}">
                             <span class="button__text">Older posts</span>&nbsp;
-                            <span class="button__icon">→</span>
+                            <span class="button__icon"> >></span>
                         </a>
                     </span>
                 {% endif -%}
