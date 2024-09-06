@@ -101,3 +101,6 @@ page_titles = "main_only"
 #           If the page doesnt set og_image, use this one as fallback. Usefull
 #           for indexes and taxonomies' pages.
 #default_og_image = "static/ocean.jpg"
+
+katex_support = true
+katex_auto_render = true
